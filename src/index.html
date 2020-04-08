@@ -4,11 +4,28 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body> 
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Convite de casamento</h1>
     </div>
-    <script src="index.js" type="module"></script>
+    <main>
+  <form>
+      <p>Cifre ou decifre uma mensagem</p>
+      <div>
+        <label id="chooseOffset">Escolha o offset</label>
+        <input type="number" min="0" id="key" placeholder="Digite um número">
+      </div>
+      <textarea name="texto" id="msg" cols="36" rows="15" placeholder="Sua mensagem aqui"></textarea><br>
+      <button id="Encode"> Cifrar </button>
+      <button id="Decode"> Decifrar </button>
+    </main>
+    </form>
+    <!--<form>
+      
+    </form>-->
+    <textarea name="texto" id="msg2" cols="36" rows="15" placeholder="Mensagem pronta "></textarea>
+      <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+#root{
+    font-family: 'Tangerine', cursive;
+    font-size: 25pt;
+    color: black;
+    text-align: center;
+}
+body{
+    font-size:20px;
+    text-align:center;
+    border-radius:4px;
+    background-color: white;
+    background-image: url('fundoconvite.jpg');
+    background-repeat: no-repeat;
+    background-size: 69em 35em;
+}
+#Encode{
+    border: 2px black;
+    border-radius: 2px;
+    padding: 6px 15px;
+    font-weight: 750;
+    margin: 8px;
+    background-color: rgb(108, 163, 185);
+    color: black;
+    
+}
+#Decode{
+    border: 2px black;
+    border-radius: 2px;
+    padding: 6px 15px;
+    font-weight: 750;
+    margin: 8px;
+    background-color: rgb(108, 163, 185);
+    color: black;
+}
+
+p{
+    font-family: 'Tangerine', cursive;
+    font-size: 30pt;
+}
+textarea{
+    margin: 10px;
+    border-radius: 5px;
+}
+#chooseOffset{
+    font-size: 33px;
+    font-family: 'Tangerine', cursive;
+}
+#key{
+    padding: 3px;
+    width: 135px;
+    border-radius: 3px;
+    margin: 5px;
+    
+}
+.return-msg{
+    margin: 10px;
+    border-radius: 5px;
+}
+  
