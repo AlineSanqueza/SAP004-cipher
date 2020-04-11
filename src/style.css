@@ -5,15 +5,15 @@
     text-align: center;
 }
 body{
-    font-size:20px;
-    text-align:center;
-    border-radius:4px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
     background-color: white;
     background-image: url('fundoconvite.jpg');
     background-repeat: no-repeat;
-    background-size: 69em 35em;
+    background-size: cover; /*100%; 362mm 175mm;*/
 }
-#Encode{
+#encode{
     border: 2px black;
     border-radius: 2px;
     padding: 6px 15px;
@@ -23,7 +23,16 @@ body{
     color: black;
     
 }
-#Decode{
+#decode{
+    border: 2px black;
+    border-radius: 2px;
+    padding: 6px 15px;
+    font-weight: 750;
+    margin: 8px;
+    background-color: rgb(108, 163, 185);
+    color: black;
+}
+#clear{
     border: 2px black;
     border-radius: 2px;
     padding: 6px 15px;
@@ -37,9 +46,18 @@ p{
     font-family: 'Tangerine', cursive;
     font-size: 30pt;
 }
-textarea{
+
+#msg{
     margin: 10px;
     border-radius: 5px;
+}
+#textoCifrado{ 
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+#areas{ 
+    margin: 20px;
 }
 #chooseOffset{
     font-size: 33px;
@@ -50,10 +68,5 @@ textarea{
     width: 135px;
     border-radius: 3px;
     margin: 5px;
-    
 }
-.return-msg{
-    margin: 10px;
-    border-radius: 5px;
-}
-  
+

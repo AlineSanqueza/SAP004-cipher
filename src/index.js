@@ -1,41 +1,41 @@
+import cipher from './cipher.js'
 
-//import cipher from './cipher.js';
-//console.log(cipher);
+document.getElementById("encode").addEventListener("click", function (event) { 
+    event.preventDefault();
+    let offset = document.getElementById("key").value
+    let string = document.getElementById("msg").value.toUpperCase()
+    let saida = cipher.encode(offset, string)
 
-
-function encode (){
-    event.preventDefault()
-    const text = document.getElementById("msg").value
-    const offset = document.getElementById("key").value
-    if (text == ""){
-        alert("Digite uma mensagem")
-    }else if (offset == 0){ 
+    if (string == ""){ 
+        alert("Digite a mensagem")
+    }else if (offset == 0){
         alert("Deslocamento inválido")
-    }else {
-     document.getElementById("msg").innerHTML= cipher (text, offset)
+    }else{
+        document.getElementById("textoCifrado").value = saida
     }
-    
-    }
-        document.getElementById("Encode").addEventListener("click", encode)
+})   
 
-   
-function decode(event){
+document.getElementById("decode").addEventListener("click", function (event){     
     event.preventDefault()
-    const text = document.getElementById("msg").value
-    const offset = document.getElementById("key").value
-    if (text == ""){
-        alert("Digite a mensagem para ser decifrada")
-    }else if (offset == 0)
-        alert("Deslocamento inválido")
-    }
-    document.getElementById("Decode").addEventListener("click", decode)
+    let offset = document.getElementById("key").value
+    let string = document.getElementById("msg").value.toUpperCase()
+    let saida = cipher.decode(offset, string)
 
-    /*function encode1(event){
+    if (string == ""){ 
+        alert("Digite a mensagem")
+    }else if (offset == 0){
+        alert("Deslocamento inválido")
+    }else{
+        document.getElementById("textoCifrado").value= saida
+    }
+})
+
+document.getElementById("clear").addEventListener("click", function (event){
         event.preventDefault()
-        const text = document.getElementById("msg").value
-        const offset = document.getElementById("key").value
-        document.getElementById("msg2").innerHTML = cipher.encode(text, offset)
-    }
-    document.getElementById("Encode").addEventListener("click", encode1)*/
-
-
+        let offset = document.getElementById("key")
+        let string = document.getElementById("msg")
+        let saida = document.getElementById("textoCifrado")
+        offset.value = ""
+        string.value = ""
+        saida.value = ""
+    })

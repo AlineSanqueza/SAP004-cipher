@@ -17,15 +17,15 @@
         <label id="chooseOffset">Escolha o offset</label>
         <input type="number" min="0" id="key" placeholder="Digite um número">
       </div>
-      <textarea name="texto" id="msg" cols="36" rows="15" placeholder="Sua mensagem aqui"></textarea><br>
-      <button id="Encode"> Cifrar </button>
-      <button id="Decode"> Decifrar </button>
-    </main>
+      <div id= "areas"> 
+      <textarea name="texto" id="msg" cols="36" rows="15" placeholder="Digite a sua mensagem aqui"></textarea>
+      <textarea name="texto" id="textoCifrado" cols="36" rows="15" placeholder="Mensagem pronta" readonly></textarea>
+    </div>
+      <button id="encode"> Cifrar </button>
+      <button id="decode"> Decifrar </button>
+      <input type= "reset" id="clear" value="Limpar">
     </form>
-    <!--<form>
-      
-    </form>-->
-    <textarea name="texto" id="msg2" cols="36" rows="15" placeholder="Mensagem pronta "></textarea>
+  </main>
       <script src="index.js" type="module"></script>
   </body>
 </html>
