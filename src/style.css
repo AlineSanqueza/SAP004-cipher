@@ -8,22 +8,11 @@ body{
     font-size: 20px;
     text-align: center;
     border-radius: 4px;
-    background-color: white;
     background-image: url('fundoconvite.jpg');
     background-repeat: no-repeat;
-    background-size: cover; /*100%; 362mm 175mm;*/
+    background-size: cover;
 }
-#encode{
-    border: 2px black;
-    border-radius: 2px;
-    padding: 6px 15px;
-    font-weight: 750;
-    margin: 8px;
-    background-color: rgb(108, 163, 185);
-    color: black;
-    
-}
-#decode{
+.buttons{ 
     border: 2px black;
     border-radius: 2px;
     padding: 6px 15px;
@@ -32,34 +21,18 @@ body{
     background-color: rgb(108, 163, 185);
     color: black;
 }
-#clear{
-    border: 2px black;
-    border-radius: 2px;
-    padding: 6px 15px;
-    font-weight: 750;
-    margin: 8px;
-    background-color: rgb(108, 163, 185);
-    color: black;
-}
-
 p{
     font-family: 'Tangerine', cursive;
     font-size: 30pt;
 }
-
-#msg{
+.text-area{
     margin: 10px;
     border-radius: 5px;
-}
-#textoCifrado{ 
-    margin: 10px;
-    border-radius: 5px;
-    
 }
 #areas{ 
-    margin: 20px;
+    margin: 10px;
 }
-#chooseOffset{
+#choose-offset{
     font-size: 33px;
     font-family: 'Tangerine', cursive;
 }
@@ -67,6 +40,5 @@ p{
     padding: 3px;
     width: 135px;
     border-radius: 3px;
-    margin: 5px;
+    margin: 10px;
 }
-

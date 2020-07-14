@@ -10,22 +10,22 @@
     <div id="root">
       <h1>Convite de casamento</h1>
     </div>
-    <main>
-  <form>
+  <main>
+    <form>
       <p>Cifre ou decifre uma mensagem</p>
-      <div>
-        <label id="chooseOffset">Escolha o offset</label>
+      <div> 
+        <label id="choose-offset">Escolha o offset</label>
         <input type="number" min="0" id="key" placeholder="Digite um número">
       </div>
-      <div id= "areas"> 
-      <textarea name="texto" id="msg" cols="36" rows="15" placeholder="Digite a sua mensagem aqui"></textarea>
-      <textarea name="texto" id="textoCifrado" cols="36" rows="15" placeholder="Mensagem pronta" readonly></textarea>
+    <div id="areas"> 
+      <textarea name="text" class="text-area" id="msg" cols="36" rows="15" placeholder="Digite a sua mensagem aqui"></textarea>
+      <textarea name="text" class="text-area" id="encoded-text" cols="36" rows="15" placeholder="Mensagem pronta" readonly></textarea>
     </div>
-      <button id="encode"> Cifrar </button>
-      <button id="decode"> Decifrar </button>
-      <input type= "reset" id="clear" value="Limpar">
+      <button class="buttons" id="encode"> Cifrar </button>
+      <button class="buttons" id="decode"> Decifrar </button>
+      <input type= "reset" class="buttons" id="clear" value="Limpar">
     </form>
-  </main>
+  </main>    
       <script src="index.js" type="module"></script>
   </body>
 </html>
