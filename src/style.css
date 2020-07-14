@@ -1,10 +1,10 @@
-#root{
+#root {
     font-family: 'Tangerine', cursive;
     font-size: 25pt;
     color: black;
     text-align: center;
 }
-body{
+body {
     font-size: 20px;
     text-align: center;
     border-radius: 4px;
@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.buttons{ 
+.buttons { 
     border: 2px black;
     border-radius: 2px;
     padding: 6px 15px;
@@ -20,23 +20,24 @@ body{
     margin: 8px;
     background-color: rgb(108, 163, 185);
     color: black;
+    cursor: pointer;
 }
-p{
+p {
     font-family: 'Tangerine', cursive;
     font-size: 30pt;
 }
-.text-area{
+.text-area {
     margin: 10px;
     border-radius: 5px;
 }
-#areas{ 
+#areas { 
     margin: 10px;
 }
-#choose-offset{
+#choose-offset {
     font-size: 33px;
     font-family: 'Tangerine', cursive;
 }
-#key{
+#key {
     padding: 3px;
     width: 135px;
     border-radius: 3px;

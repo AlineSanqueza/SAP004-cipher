@@ -23,6 +23,5 @@ const cipher = {
     }
     return decoded;
   }
-
 }
 export default cipher;
